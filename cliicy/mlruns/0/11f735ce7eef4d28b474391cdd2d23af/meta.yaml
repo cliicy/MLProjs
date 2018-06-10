@@ -1,0 +1,13 @@
+artifact_uri: .//cliicy\0\11f735ce7eef4d28b474391cdd2d23af\artifacts
+end_time: 1528619323933
+entry_point_name: ''
+experiment_id: 0
+name: Run 0
+run_uuid: 11f735ce7eef4d28b474391cdd2d23af
+source_name: H:/2018_git_task/Demo_MLProject/train/my_train.py
+source_type: 4
+source_version: 55deea6502e28fa2c92d27c464bfc58e10db4105
+start_time: 1528619323290
+status: 3
+tags: []
+user_id: unknown
