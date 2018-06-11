@@ -225,3 +225,20 @@ if __name__=="__main__":
   #  print(os.path.basename(__file__))
   #  print(os.path.dirname(os.path.abspath(__file__)))
     print("file://%s" % (os.path.dirname(os.path.abspath(__file__))))
+    aa=os.environ.get("SHELL", "")
+    if os.environ.get("SHELL", ""):
+        print("Liux system")
+    else:
+        work_dir="C:\\Users\\Airy\\AppData\\Local\\Temp\\mlflow-jvijbpbj"
+        run_project_command="python my_train.py 0.4"
+        pyrun,filerun,ver=run_project_command.split()
+        #cmd='cd %s && %s' % (work_dir, run_project_command)
+       #cmd2='%s %s%s%s %s'%(pyrun,work_dir,"\\",filerun,ver)
+        #os.system(cmd2)
+        #print("windows system")
+
+        cmd = '%s %s %s %s' % ("push", work_dir,"&",run_project_command)
+        print(cmd)
+        os.system(cmd)
+
+
