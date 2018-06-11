@@ -25,6 +25,7 @@ if __name__ == "__main__":
     np.random.seed(40)
     mlflow.set_tracking_uri("..\\")#added by cliicy 201806
     # Read the wine-quality csv file (make sure you're running this from the root of MLflow!)
+    mlflow.set_tracking_uri("file://%s" % (os.path.dirname(os.path.abspath(__file__))))  # added by cliicy 201806
     wine_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "wine-quality.csv")
     data = pd.read_csv(wine_path)
 

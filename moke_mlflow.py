@@ -210,6 +210,8 @@ def _run_project(project, entry_point, work_dir, parameters, use_conda, storage_
         print("=== Run failed ===")
 
 if __name__=="__main__":
+    '''
+    
     print("just try invoke mlflow")
     command = r"mlflow run --no-conda H:\2018_git_task\Demo_MLProject\train -P alpha=0.4"
     uri="H:\2018_git_task\Demo_MLProject\train"
@@ -218,4 +220,8 @@ if __name__=="__main__":
                experiment_id=None, use_conda=False, use_temp_cwd=True,
                storage_dir=None)
  #   os.system(command)
-
+    '''
+  #  print("file://%s" % (os.path.abspath(__file__)))  # added by cliicy 201806
+  #  print(os.path.basename(__file__))
+  #  print(os.path.dirname(os.path.abspath(__file__)))
+    print("file://%s" % (os.path.dirname(os.path.abspath(__file__))))
