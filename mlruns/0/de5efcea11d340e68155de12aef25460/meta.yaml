@@ -1,0 +1,13 @@
+artifact_uri: F:\MLflow_V1\MLProjs\mlruns\0\de5efcea11d340e68155de12aef25460\artifacts
+end_time: 1528702698574
+entry_point_name: main
+experiment_id: 0
+name: Run 2
+run_uuid: de5efcea11d340e68155de12aef25460
+source_name: https://github.com/cliicy/MLProjs.git
+source_type: 3
+source_version: 7f1216cd54b9d070fdc4e7183f3937f1df6a860f
+start_time: 1528702698277
+status: 3
+tags: []
+user_id: unknown
