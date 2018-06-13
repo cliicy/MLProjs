@@ -24,11 +24,7 @@ def eval_metrics(actual, pred):
 if __name__ == "__main__":
     warnings.filterwarnings("ignore")
     np.random.seed(40)
-    #mlflow.set_tracking_uri("..\\")#added by cliicy 201806
-    # Read the wine-quality csv file (make sure you're running this from the root of MLflow!)
-    #print("file://%s" % (os.path.dirname(os.path.abspath(__file__))))
-    #mlflow.set_tracking_uri("file:///%s" % (os.path.dirname(os.path.abspath(__file__))))  # added by cliicy 201806
-    #mlflow.set_tracking_uri("%s" % (os.path.dirname(os.path.abspath(__file__))))  # added by cliicy 201806
+     # Read the wine-quality csv file (make sure you're running this from the root of MLflow!)
     wine_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "wine-quality.csv")
     data = pd.read_csv(wine_path)
 
@@ -44,7 +40,7 @@ if __name__ == "__main__":
     alpha = float(sys.argv[1]) if len(sys.argv) > 1 else 0.5
     l1_ratio = float(sys.argv[2]) if len(sys.argv) > 2 else 0.5
 
-    parameters = {"alpha": 0.5, "l1_ratio": 0.1}
+    #parameters = {"alpha": 0.5, "l1_ratio": 0.1}
     #with mlflow.run('H:\\2018_git_task\\Demo_MLProject\\train', "main", None, parameters):
 
     with mlflow.start_run():

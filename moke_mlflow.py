@@ -209,9 +209,21 @@ def _run_project(project, entry_point, work_dir, parameters, use_conda, storage_
         tracking.end_run("FAILED")
         print("=== Run failed ===")
 
+
+def spring():
+    """This is just a example to show how to use document for function and class
+    :return:
+    """
+    x = ('This will build a very long long' 
+         'long long long long long long string'
+         'one two three four five six seven')
+    print(x)
+    strMessage="Spring is approaching. Let's go out for play"
+    print(strMessage)
+
+
 if __name__=="__main__":
     '''
-    
     print("just try invoke mlflow")
     command = r"mlflow run --no-conda H:\2018_git_task\Demo_MLProject\train -P alpha=0.4"
     uri="H:\2018_git_task\Demo_MLProject\train"
@@ -221,6 +233,8 @@ if __name__=="__main__":
                storage_dir=None)
  #   os.system(command)
     '''
+    spring()
+    exit()
   #  print("file://%s" % (os.path.abspath(__file__)))  # added by cliicy 201806
   #  print(os.path.basename(__file__))
   #  print(os.path.dirname(os.path.abspath(__file__)))
