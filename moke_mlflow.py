@@ -223,6 +223,12 @@ def spring():
 
 
 if __name__=="__main__":
+    work_dir="C:\\Users\\MyPC\\AppData\\Local\\Temp\\mlflow-ejjp75d7"
+    run_project_command="python my_train.py 6.88 0.2"
+    pycmd,modelcmd=run_project_command.split(' ',1)
+    cmd = '%s %s %s' % (pycmd, work_dir, modelcmd)
+    print(cmd)
+    exit(1)
     '''
     print("just try invoke mlflow")
     command = r"mlflow run --no-conda H:\2018_git_task\Demo_MLProject\train -P alpha=0.4"
