@@ -233,11 +233,15 @@ if __name__=="__main__":
                storage_dir=None)
  #   os.system(command)
     '''
-    spring()
-    exit()
+  #  spring()
+  #  exit()
   #  print("file://%s" % (os.path.abspath(__file__)))  # added by cliicy 201806
   #  print(os.path.basename(__file__))
   #  print(os.path.dirname(os.path.abspath(__file__)))
+    strAbs=os.path.abspath(__file__)
+    print(strAbs)
+    strDirName=os.path.dirname(strAbs)
+    #os.path.join(os.path.dirname(os.path.abspath(__file__))
     print("file://%s" % (os.path.dirname(os.path.abspath(__file__))))
     aa=os.environ.get("SHELL", "")
     if os.environ.get("SHELL", ""):
