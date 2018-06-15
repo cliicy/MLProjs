@@ -1,4 +1,4 @@
-name: MLprojects
+name: MLWine-quality
 
 conda_env: conda.yaml
 
